@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes bgAnim {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg, #1b1e29 , #2c2837a9, #191720);
+    background-size: 200% 200%;
+    overflow-x: hidden;
+    animation: bgAnim 7s ease-in-out infinite;
+}
+
+
+
+header{
+    padding: 2vh 2vw;
+    font-size: 2vh;
+    height: auto;
+    color: white;
+    font-family: 'Montserrat';
+    letter-spacing: .2vw;
+    font-weight: 300;
+    background-color: #13131393;
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coin{
+    border-radius: .5vh;
+    text-align: center;
+    background-color: #52576572;
+    padding: 1vh 1vw;
+    padding: 10px;
+}.coin hr{
+    margin-top: 10px;
+}
+.coin i{
+    color: #ffdb58f0;
+    font-size: 2vh;
+    margin-top: 10px;
+}
+.qntCoin{
+    padding: 10px 0;
+}
+main{
+    width: 100vw;
+    height: 50vw;
+}
+.container{
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10vh;
+    cursor: pointer;
+    background-color: #13131337;
+    border-radius: 50%;
+}
+.cookie{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/cookie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quantidadeDeMoedas{
+    height: auto;
+    width: 25%;
+    color: white;
+    font-size: 0;
+    font-family: 'Poppins';
+    letter-spacing: .2vw;
+    transition: .2s ease-in-out;
+}
