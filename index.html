@@ -5,22 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cookie.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>TapGame Teste kkkk</title>
 </head>
 <body>
     
     <header>
+        
         <h1>TapGame</h1>
+        
+        <div class="upgrades">
+            <div class="upgradeBtn"><h2>Upgrades</h2></div>
+            <dialog class="upgradeModal">
+            <button class="closeBtn">&times;</button>
+            <h2>Upgrades</h2>
+            <hr class="hrTitleUpgrade">
+                <div class="containUpgrades">
+                    <div class="contentUpgrades">
+
+                        <!-- UPGRADE 1
+                            AUMENTAR O VALOR DO BOTÃO DINAMICAMENTE E DESCONTAR DA QUANTIDADE GERAL DE MOEDAS -->
+                        
+                        <div class="upgradesName">
+                            <ul>
+                                <li class="titleUpgrade">Upgrade 1</li>
+                                <li class="explicacaoUpgrade">Boost your gains in 2x</li>
+                            </ul>
+                        </div>
+                        <div class="upgradesValue">
+                            <ul>
+                                <button class="botaoParaComprarUpgrade" value="150">
+                                    <li class="precoUpgrade">150<i class="fa-solid fa-coins upgradeCoin"></i></li>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contentUpgrades">
+
+                        <!-- UPGRADE 2 -->
+                        
+                        <div class="upgradesName">
+                            <ul>
+                                <li class="titleUpgrade">Upgrade 2</li>
+                                <li class="explicacaoUpgrade">Explicação do Upgrade</li>
+                            </ul>
+                        </div>
+                        <div class="upgradesValue">
+                            <ul>
+                                <button class="botaoParaComprarUpgrade" value="300">
+                                    <li class="precoUpgrade">300<i class="fa-solid fa-coins upgradeCoin"></i></li>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contentUpgrades">
+
+                        <!-- UPGRADE 3 -->
+                        
+                        <div class="upgradesName">
+                            <ul>
+                                <li class="titleUpgrade">Upgrade 3</li>
+                                <li class="explicacaoUpgrade">Explicação do Upgrade</li>
+                            </ul>
+                        </div>
+                        <div class="upgradesValue">
+                            <ul>
+                                <button class="botaoParaComprarUpgrade" value="350">
+                                    <li class="precoUpgrade">350<i class="fa-solid fa-coins upgradeCoin"></i></li>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </dialog>
+        </div>
+        
+
         <div class="coin">
             <h2>Moedas</h2><i class="fa-solid fa-coins"></i> <hr>
             <div class="qntCoin">0</div>
         </div>
+
     </header>
 
     <main>
         <div class="container">
+            
             <div class="quantidadeDeMoedas"></div>
-            <div class="cookie"></div>
+        
+            <dialog class="upgradeModal popUpError" open>
+                <button class="closeBtn error">&times;</button>
+                <h3><span class="material-symbols-outlined">ERROR ERRO ERROR</span>
+                </h3><hr class="hrTitleUpgrade errorHr">
+                <p>Você ainda não possui dinheiro o suficiente para comprar este upgrade. Por favor, colete mais moedas &#x1F604</p>
+                <button class="buttonErrorOk">Ok!</button>
+            </dialog>
+
+            <abbr title="Clique em mim &#x1F604 &#x1F36A">
+                <div class="cookie"></div>
+            </abbr>
+
         </div>
     </main>
 

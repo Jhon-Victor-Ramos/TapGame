@@ -43,7 +43,109 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.coin{
+
+.upgrades{
+    cursor: pointer;
+    background-color: transparent !important;
+    z-index: 1;
+}
+.upgradeModal{
+    border-radius: .5vh;
+    background-color: #f3f3f3;
+    margin: auto;
+    width: 75vw;
+    border: none;
+    padding: 1vh;
+    cursor: auto;
+    transition: .1s ease-in-out;
+    margin-top: 15vh;
+}
+.closeBtn{
+    position: absolute;
+    cursor: pointer;
+    margin-top: -1%;
+    right: .7vw;
+    padding: .5vh;
+    font-size: 5vh;
+    background-color: transparent;
+    border: none;
+    transition: .3s ease-in-out;
+    outline: none;
+}.closeBtn:hover{
+    color: #ff8484;
+    font-size: 7vh;
+    transform: rotate(90deg);
+    filter: drop-shadow(2.5px 0px 2.5px #cb6868db);
+}
+.hrTitleUpgrade{
+    width: 75%;
+    margin: auto;
+    border-radius: 1vh;
+    border: ridge .1vh #1b1e29b0;
+    box-shadow: 0 .2vh 5px rgba(0, 0, 0, 0.464);
+    margin-bottom: .5vh;
+}.upgradeModal i{
+    color: #ffd900b9;
+}
+.containUpgrades{
+    margin: auto;
+    text-align: left;
+    width: 75%;
+    height: auto;
+}
+.contentUpgrades{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.botaoParaComprarUpgrade{
+    padding: 0.7vw;
+    letter-spacing: .3vw;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: .5vw;
+    background-color: #13131313;
+    border: none;
+    border-bottom: .2vh solid #191720;
+    transition: .01s ease;
+}
+.containUpgrades hr{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.upgradesName,.upgradesValue ul,li{
+    list-style-type: none;
+}
+.explicacaoUpgrade{
+    font-size: 1.7vh;
+    margin-left: .3vw;
+    max-width: 65%;
+}
+.titleUpgrade{
+    font-weight: 700;
+    text-align: left;
+}
+.upgradesValue{
+    padding: 0 .7vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.upgradeCoin{
+    display: flex;
+}
+.upgradesValue li{
+    padding-top: 5px;
+}
+.upgradesName ul{margin-left: 10%; width: 200%;}
+.upgradesName li{
+    padding: 5px;
+}
+
+.coin, .upgradeBtn, .upgrades{
     border-radius: .5vh;
     text-align: center;
     background-color: #52576572;
@@ -70,12 +172,13 @@ main{
     margin: auto;
     margin-top: 10vh;
     cursor: pointer;
-    background-color: #13131337;
+    background-color: #13131310;
     border-radius: 50%;
 }
 .cookie{
     width: 100%;
     height: 100%;
+    position: relative;
     background-image: url(img/cookie.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,4 +192,52 @@ main{
     font-family: 'Poppins';
     letter-spacing: .2vw;
     transition: .2s ease-in-out;
+}
+
+.errorHr{border-color: #ea9559;}
+
+.error{
+    color:#ea5959;
+    font-size: 6vh;
+    filter: drop-shadow(2.5px 0px 2px #b028288a);
+}.error:hover{
+    font-size: 8vh;
+}
+.popUpError{
+    box-shadow: 0px 0px 20px 15px #232734b1;
+    display: none;
+    margin-top: 0;
+    padding: 2vh;
+    color: wheat;
+    background-image: linear-gradient(150deg, #232734d6, #232734e9, #232734e4, #000000cc);
+    text-align: center;
+    font-family: 'Poppins';
+    width: 25%;
+    background-size: 200% 200%;
+    animation: bgAnim 14s ease-in-out infinite;
+}.popUpError h3{
+    font-weight: 500;
+}.popUpError p{
+    width: 50%;
+    margin: auto;
+}
+.material-symbols-outlined{
+    color: #ea5959;
+}
+.buttonErrorOk{
+    margin-top: 2.5%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 3vh;
+    color: white;
+    padding: 1vh;
+    border-radius: .5vh;
+    background-color: #2327344f;
+    box-shadow: 0px 0px 10px #1313136e;
+    transition: .3s ease-in-out;
+}.buttonErrorOk:hover{
+    background-color: #23273417;
+    padding: 2vh;
+
 }
