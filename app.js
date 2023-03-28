@@ -22,7 +22,7 @@ var quantasMoedasTenhoVer = document.querySelector('.qntCoin')
 
 var moedasGanhas = 10
 
-var quantasMoedas = 1000
+var quantasMoedas = 0
 
 function clickAnimation(objeto, escala) {
     objeto.addEventListener('click', () => {
