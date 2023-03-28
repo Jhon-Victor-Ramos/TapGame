@@ -145,6 +145,20 @@ header{
     padding: 5px;
 }
 
+.comingSoon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-weight: bold;
+}.comingSoon span{
+    filter: drop-shadow(1px 0px 0 black);
+    color: yellow;
+    margin-top: -2.5px;
+}.comingSoon p{
+    text-indent: 5px;
+}
+
 .coin, .upgradeBtn, .upgrades{
     border-radius: .5vh;
     text-align: center;
